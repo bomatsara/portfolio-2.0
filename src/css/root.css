@@ -13,10 +13,10 @@
   /* It's used for marking errors on forms */
   --color-error: #E74A3B;
 
+  --color-black-rgb: 41, 41, 41;
+  --color-accent-green-rgb: 0, 176, 104;
+
   --container: 1280px;
-  --b-mobile: 360px;
-  --b-tablet: 768px;
-  --b-desktop: 1280px;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,79 @@
+.button {
+  border-radius: 8px;
+  border: 0;
+  background-color: var(--color-light-grey);
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--color-dark-grey);
+  }
+
+}
+
+.button-display {
+  background-color: transparent;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='16' viewBox='0 0 30 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7C0.447715 7 -4.82823e-08 7.44772 0 8C4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM29.7071 8.7071C30.0976 8.31658 30.0976 7.68341 29.7071 7.29289L23.3431 0.92893C22.9526 0.538406 22.3195 0.538406 21.9289 0.92893C21.5384 1.31945 21.5384 1.95262 21.9289 2.34314L27.5858 8L21.9289 13.6569C21.5384 14.0474 21.5384 14.6805 21.9289 15.0711C22.3195 15.4616 22.9526 15.4616 23.3431 15.0711L29.7071 8.7071ZM1 9L29 9L29 7L1 7L1 9Z' fill='%2300B068'/%3E%3C/svg%3E%0A");
+    width: 30px;
+    height: 16px;
+    margin-right: 12px;
+  }
+
+  &:hover {
+
+  }
+}
+
+.button-accent {
+  background-color: var(--color-accent-green);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-dark-accent-green);
+  }
+
+}
+
+.button-light_grey {
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.75 19.25L19.25 4.75M19.25 4.75H5.75M19.25 4.75V18.25' stroke='%2300B068' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    margin-left: 12px;
+  }
+}
+
+.button-outline {
+  background-color: transparent;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: calc(100% - 48px);
+    height: 2px;
+    background-color: var(--color-accent-green);
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: var(--color-accent-green);
+  }
+}
+

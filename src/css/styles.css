@@ -3,23 +3,41 @@
   | include css partials with
   | default @import url()
   |============================
+
+  Media breakpoint examples:
+  For mobile: by default, @media (min-width: var(--b-mobile)) {}
+  For tablet: @media (min-width: var(--b-tablet)) {}
+  For desktop: @media (min-width: var(--b-desktop)) {}
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+@import url('./fonts.css');
+@import url('./root.css');
+@import url('./base.css');
+/*@import url('./typography.css');*/
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+/*
+  Elements
+*/
+/*@import url('./element/button.css');*/
+/*@import url('./element/icon.css');*/
+/*@import url('./element/input.css');*/
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+/*
+  Modules
+*/
+/*@import url('./module/swiper.css');*/
+/*@import url('./module/modal.css');*/
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+/*
+  Blocks
+*/
+/*@import url('./block/header.css');*/
+/*@import url('./block/hero.css');*/
+/*@import url('./block/about_me.css');*/
+/*@import url('./block/tech_skills.css');*/
+/*@import url('./block/projects.css');*/
+/*@import url('./block/benefits.css');*/
+/*@import url('./block/faq.css');*/
+/*@import url('./block/reviews.css');*/
+/*@import url('./block/work_together.css');*/
+/*@import url('./block/footer.css');*/

@@ -1,0 +1,26 @@
+:root {
+  --font-impact: 'Impact', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+
+  --color-black: #292929;
+  --color-accent-green: #00B068;
+  --color-white: #F0F0F0;
+  --color-light-grey: #E4E5E6;
+  --color-light-accent: #BCDFD1;
+
+  --color-dark-grey: #BBBBBB;
+  --color-dark-accent-green: #009156;
+  /* It's used for marking errors on forms */
+  --color-error: #E74A3B;
+
+  --container: 1280px;
+  --b-mobile: 360px;
+  --b-tablet: 768px;
+  --b-desktop: 1280px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}

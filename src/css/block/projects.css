@@ -1,3 +1,31 @@
 .section.section-projects {
+}
 
+.projects-title {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.projects-name-title {
+  margin: 16px 0;
+}
+
+.projects-cards {
+  margin-bottom: 40px;
+}
+
+.button-card-container {
+  display: flex;
+  justify-content: flex-end;
 }

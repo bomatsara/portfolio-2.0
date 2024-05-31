@@ -18,12 +18,12 @@ function loadProjects() {
     li.innerHTML = `
       <picture>
         <source 
-          srcset="${project.image2x}" 
+          srcset="${project.image1x} 1x, ${project.image2x} 2x" 
           media="(min-width: 1280px)"
           sizes="1008px"
         >
         <source 
-          srcset="${project.image2x}" 
+          srcset="${project.image1x} 1x, ${project.image2x} 2x" 
           media="(min-width: 768px) and (max-width: 1279px)"
           sizes="704px"
         >
@@ -38,14 +38,14 @@ function loadProjects() {
           src="${project.image1x}" 
           srcset="${project.image1x} 1x, ${project.image2x} 2x" 
           alt="${project.alt}"
-          style="width: 100%; height: auto;"
+          class="card-image"
         >
       </picture>
       <p class="text">${project.text}</p>
-        <div class="button-card-container">
-              <h3 class="projects-name-title">${project.description}</h3>
-              <a href="https://github.com/bomatsara/portfolio-2.0" target="_blank" class="button button-light_grey">visit</a>
-        </div>
+      <div class="button-card-container">
+        <h3 class="projects-name-title">${project.description}</h3>
+        <a href="https://github.com/bomatsara/portfolio-2.0" target="_blank" class="button button-light_grey">visit</a>
+      </div>
     `;
     list.appendChild(li);
   }

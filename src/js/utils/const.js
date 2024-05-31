@@ -42,8 +42,8 @@ export const PROJECTS_IMG = [
     alt: 'mimino website',
   },
   {
-    image1x: './img/my_projects/chego-1x.jpeg',
-    image2x: './img/my_projects/chego-2x.jpeg',
+    image1x: './img/my_projects/chego-1x-mob.jpeg',
+    image2x: './img/my_projects/chego-2x-mob.jpeg',
     text: 'React, JavaScript, Node JS, Git',
     description: 'chego jewelry website',
     alt: 'chego jewelry website',

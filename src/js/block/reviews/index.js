@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-import getReviews from '../../utils/api';
+import {getReviews} from '../../utils/api';
 
 const sectionReviewsEl = document.querySelector('#section-reviews');
 const ulEl = sectionReviewsEl.querySelector('.reviews');

@@ -26,7 +26,7 @@
 /*
   Modules
 */
-/*@import url('./module/swiper.css');*/
+@import url('./module/swiper.css');
 /*@import url('./module/modal.css');*/
 
 /*
@@ -39,6 +39,6 @@
 /*@import url('./block/projects.css');*/
 /*@import url('./block/benefits.css');*/
 /*@import url('./block/faq.css');*/
-/*@import url('./block/reviews.css');*/
+@import url('./block/reviews.css');
 /*@import url('./block/work_together.css');*/
 /*@import url('./block/footer.css');*/

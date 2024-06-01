@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "./node_modules/.bin/vite",
     "build": "vite build --base=/portfolio-2.0/",
     "preview": "vite preview"
   },

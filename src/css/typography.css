@@ -90,3 +90,8 @@ a {
   color: var(--color-accent-green);
   font-family: inherit;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}

@@ -2,14 +2,14 @@
     padding-top: 96px;
 
     background-image:
-        url(../../imghero/decorbg1.svg);
+        url(../../img/hero/decorbg1.svg);
 
-    /*
+
     flex-shrink: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 auto; */
+    margin: 0 auto;
 }
 
 
@@ -159,7 +159,7 @@
         width: 108px;
         height: 108px;
         border-radius: 16px;
-        background-image: url('../../imghero/developer.jpg');
+        background-image: url('../../img/hero/developer.jpg');
     }
 
     .hero-image {

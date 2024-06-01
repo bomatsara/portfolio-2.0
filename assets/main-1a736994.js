@@ -5,4 +5,4 @@ import{a,b as c,i as u}from"./vendor-715407fd.js";(function(){const o=document.c
         <div class="modal-text text">text</div>
     </div>
 `,{onShow:r=>{r.element().querySelector(".modal-close").onclick=r.close}})}document.addEventListener("DOMContentLoaded",()=>{const r=document.querySelector("#form-work-together");let o=null;r&&r.addEventListener("submit",async s=>{s.preventDefault();const{email:n,message:e}=s.target.elements;try{const t=await d({email:n.value,message:e.value});if(t.data){const{title:i,message:l}=t.data;o||(o=m()),o.element().querySelector(".modal-title").textContent=i,o.element().querySelector(".modal-text").textContent=l,o.show(),r.reset()}}catch(t){u.error({title:"Error",message:t.message})}})});
-//# sourceMappingURL=main-2544bfba.js.map
+//# sourceMappingURL=main-1a736994.js.map

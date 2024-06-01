@@ -1,35 +1,67 @@
 .section.section-about_me {
+  padding-top: 40px;
 }
 
 .title-about-me-h2 {
   letter-spacing: 0.03em;
-  text-align: right;
+  text-align: left;
   color: #292929;
-  gap: 40px;
+  margin-bottom: 40px;
 }
 
 .img-about-me-man {
+  display: block;
+  width: 100%;
   border-radius: 16px;
-  gap: 40px;
+  margin-bottom: 40px;
 }
 
 .about-me-title-h3 {
   font-weight: 500;
-  gap: 32px;
+  margin-bottom: 32px;
+}
+.about-me-text-p {
+  list-style: none;
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 32px;
+}
+
+.about-me-text-p-mark {
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 32px;
+}
+
+.about-me-menu-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .about-me-text-list-li {
-  text-decoration: none;
-  gap: 32px;
+  position: relative;
+  padding-left: 20px;
 }
 
-.about-me-text-p {
-  font-weight: 300;
-  font-size: 16px;
+.about-me-text-list-li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 17%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #00b068;
+  border-radius: 50%;
 }
 
 .decor-bg-cont {
-  background: url(./src/img/img-about-me/decor\ bg\ 2\ @1x-min.png);
-  width: 284px;
-  height: auto;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.education-container {
 }

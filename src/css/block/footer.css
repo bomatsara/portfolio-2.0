@@ -1,23 +1,35 @@
-footer.footer {
+.footer {
+  padding: 40px, 20px, 24px, 20px;
 }
 
 .footer-logo {
   font-family: var(--font-impact);
   font-weight: 400;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 32px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #292929;
+  padding-bottom: 32px;
 }
 
 .social-list-ul {
-  text-decoration: none;
-  gap: 24px;
+  list-style: none;
+  padding: 0px;
 }
 
+.social-item {
+  margin-bottom: 24px;
+}
 .copyright-footer-text {
   text-align: center;
   justify-content: center;
   margin-top: 40px;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #292929;
 }

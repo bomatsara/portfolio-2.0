@@ -1,6 +1,6 @@
 .section-projects .projects-title {
   text-align: center;
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 
 .section-projects .projects-item {
@@ -70,7 +70,7 @@
   }
 
   .section-projects .projects-title {
-    margin: 60px 0;
+    margin-bottom: 60px;
   }
 
   .section-projects .projects-cards {
@@ -85,13 +85,8 @@
 }
 
 @media (min-width: 1280px) {
-   .section-projects img {
-    width: 1008px;
-    height: 578px;
-  }
-
   .section-projects .projects-title {
-    margin: 80px 0;
+    margin-bottom: 80px;
   }
   .section-projects .projects-cards {
     margin-bottom: 80px;

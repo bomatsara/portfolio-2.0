@@ -5,24 +5,16 @@ html {
 }
 
 .section.section-hero {
-
     /*npm img*/
     padding-top: 96px;
 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url(/src/imghero/developer.jpg);
-    background-color: var(--hero-background);
+    ground-image: linear-gradient(rgba(228, 241, 238, 0.7),
+            rgba(222, 250, 237, 0.7)),
+        url(./imghero/decorbg1.svg);
     width: 100%;
 
 
-
-
-    /*background-image: linear-gradient(rgba(228, 241, 238, 0.7),
-            rgba(222, 250, 237, 0.7)),
-        url('decorbg1.svg'); */
-
-    /* width: 100%;
+    /*
     flex-shrink: 0;
     background-size: cover;
     background-position: center;

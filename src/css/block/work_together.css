@@ -1,3 +1,121 @@
 .section.section-work_together {
+  @media (min-width: 768px) {
+    padding-top: 104px;
+    margin-top: -104px;
+    background-image: url(../../img/work_together/background.svg);
+    background-repeat: no-repeat;
+    background-size: 336px;
+    background-position: calc(100% - 20px) 0;
+  }
 
+  @media (min-width: 1280px) {
+    padding-top: 144px;
+    margin-top: -144px;
+    background-size: 526px;
+  }
+
+  .section-work_together-title {
+    margin-bottom: 30px;
+
+    @media (min-width: 1280px) {
+      width: 100%;
+      max-width: 510px;
+    }
+  }
+
+  .section-work_together-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+
+    @media (min-width: 768px) {
+      grid-gap: 60px;
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 60px 132px;
+    }
+  }
+
+  .section-work_together-column {
+
+  }
+
+  .contacts {
+    @media (min-width: 1280px) {
+      height: 100%;
+      flex-direction: column;
+      display: flex;
+    }
+
+    .contacts-text {
+      margin-bottom: 32px;
+
+      @media (min-width: 768px) {
+        width: 100%;
+        max-width: 488px;
+      }
+    }
+
+    .contacts-info {
+      @media (min-width: 1280px) {
+        margin-top: auto;
+      }
+
+      ul.contacts-list {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 18px 16px;
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+
+        @media (min-width: 1280px) {
+          flex-direction: column;
+        }
+
+        .contacts-list-item {
+          display: flex;
+          gap: 16px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .form {
+    .field, .button {
+      width: 100%;
+    }
+
+    .button {
+      @media (min-width: 768px) {
+        width: auto;
+      }
+    }
+
+    label {
+      display: block;
+    }
+
+    .form-input-row {
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    textarea.field {
+      resize: none;
+      min-height: 128px;
+    }
+  }
 }

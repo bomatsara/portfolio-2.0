@@ -1,17 +1,23 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
+import iziToast from 'izitoast';
 
-import {getReviews} from '../../utils/api';
+import { getReviews } from '../../utils/api';
 
-const sectionReviewsEl = document.querySelector('#section-reviews');
-const ulEl = sectionReviewsEl.querySelector('.reviews');
+const ulEl = document.querySelector('.reviews');
 
 getReviews()
   .then(data => {
     renderReviews(data);
-    swiperInit()
+    swiperInit();
   })
-  .catch(error => console.log(error, 'error'));
+  .catch(error => {
+    iziToast.error({
+      title: 'Error',
+      message: error.message,
+    });
+    document.querySelector('#section-reviews .swiper').innerHTML = 'Not found'
+  });
 
 function renderReviews(data) {
   const markup = data.reduce((string, item) => {
@@ -27,20 +33,19 @@ function renderReviews(data) {
 }
 
 function swiperInit() {
-    const swiper = new Swiper(".section-reviews .swiper", {
-        slidesPerView: 1,
-        spaceBetween: 32,
-        modules: [Navigation],
-        navigation: {
-            nextEl: '.section-reviews .swiper-button-next',
-            prevEl: '.section-reviews .swiper-button-prev',
-          },
-        mousewheel: true,
-        cssMode: true,
-        breakpoints: {
-            769: {
-              slidesPerView: 2
-            }
-          }
-      });
+  const swiper = new Swiper('.section-reviews .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 32,
+    modules: [Navigation],
+    navigation: {
+      nextEl: '.section-reviews .swiper-button-next',
+      prevEl: '.section-reviews .swiper-button-prev',
+    },
+    mousewheel: true,
+    breakpoints: {
+      769: {
+        slidesPerView: 2,
+      },
+    },
+  });
 }

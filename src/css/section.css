@@ -1,6 +1,5 @@
 .section {
   margin-bottom: 80px;
-  border: 1px solid var(--color-black);
 
   @media (min-width: 768px) {
     margin-bottom: 124px;
@@ -13,5 +12,4 @@
   .section__title {
 
   }
-
 }

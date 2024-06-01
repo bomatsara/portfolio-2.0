@@ -29,5 +29,7 @@
 }
 
 .decor-bg-cont {
-  background-color: ;
+  background: url(./src/img/img-about-me/decor\ bg\ 2\ @1x-min.png);
+  width: 284px;
+  height: auto;
 }

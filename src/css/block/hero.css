@@ -1,3 +1,210 @@
+html {
+    scroll-behavior: smooth;
+    /* Плавный скроллинг для всей страницы  
+    удалить если будет в главних настройках*/
+}
+
 .section.section-hero {
+
+    /*npm img*/
+    padding-top: 96px;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(/src/imghero/developer.jpg);
+    background-color: var(--hero-background);
+    width: 100%;
+
+
+
+
+    /*background-image: linear-gradient(rgba(228, 241, 238, 0.7),
+            rgba(222, 250, 237, 0.7)),
+        url('decorbg1.svg'); */
+
+    /* width: 100%;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto; */
+}
+
+
+.hero-image {
+    display: none;
+}
+
+.hero-btn {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 40px;
+
+
+    position: relative;
+
+    &:hover {
+        background-color: transparent;
+
+    }
+}
+
+.hero-btn:hover .hero-Rectangle {
+    width: 320px;
+    height: 96px;
+    margin-left: -10%;
+    animation: pulse 1s infinite;
+    /* Анимация пульсации */
+    transition: all 1s ease-in-out;
+
+}
+
+.hero-el {
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    background: transparent;
+}
+
+.hero-btn-link {
+    padding-left: 0;
+}
+
+.hero-Rectangle {
+    border-radius: 16px;
+    width: 165px;
+    height: 92px;
+    display: flex;
+    margin-left: 69%;
+    position: absolute;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: var(--color-light-accent);
+    transition: all 1s ease-in-out;
+
+}
+
+/* Анімація пульсації */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Стиль при наведенні на div */
+.hero-Rectangle:hover {
+    animation: pulse 0.5s infinite;
+    margin: 0;
+    width: 320px;
+}
+
+.hero-text {
+    margin-bottom: 72px;
+}
+
+.list-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    padding: 32px 0px;
+    background: var(--color-light-grey);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    gap: 24px;
+}
+
+@media (min-width: 320px) {}
+
+@media (min-width: 768px) {
+    .section.section-hero {
+        padding-top: 0;
+    }
+
+    h1 {
+        margin-bottom: 60px;
+    }
+
+    .hero-btn-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0, 05px;
+    }
+
+    .hero-Rectangle {
+        width: 233px;
+    }
+
+    .hero-text {
+        margin-bottom: 64px;
+    }
+
+    .list-hero {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    .hero-header {
+        align-items: center;
+        display: flex;
+    }
+
+
+    .hero-image {
+        width: 592px;
+        height: 444px;
+        margin-top: 72px;
+        top: 88px;
+        left: 656px;
+        gap: 0px;
+        border-radius: 32px;
+        opacity: 0px;
+        display: flex;
+        background-color: rgb(99, 150, 127);
+    }
+
+    .hero-footer {
+        display: flex;
+        align-items: center;
+        width: 1216px;
+        padding-left: 72px;
+    }
+
+    .h-btn-desk {
+        width: 48%;
+    }
+
+    .hero-Rectangle {
+        margin-left: 63%;
+        width: 254px;
+    }
+
+    .hero-text {
+        display: flex;
+        width: 50%;
+    }
 
 }

@@ -30,9 +30,7 @@
     margin-right: 12px;
   }
 
-  &:hover {
-
-  }
+  &:hover {}
 }
 
 .button-accent {
@@ -76,4 +74,3 @@
     color: var(--color-accent-green);
   }
 }
-

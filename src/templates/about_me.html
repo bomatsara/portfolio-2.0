@@ -1,3 +1,105 @@
 <section id="section-about_me" class="section section-about_me">
-  <div class="container">About me</div>
+  <div class="container">
+    <h2 class="title-about-me-h2">
+      about <span class="color-accent">me</span>
+    </h2>
+    <div class="desk-left-picture">
+      <picture>
+        <!---Desktop-->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../src/img/img-about-me/img-man-desk@1x-min.png 1x,
+            ../src/img/img-about-me/img-man-desk@2x-min.png 2x
+          "
+        />
+        <!--Tablet-->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../src/img/img-about-me/img-man-tabl@1x-min.png 1x,
+            ../src/img/img-about-me/img-man-tabl@2x-min.png 2x
+          "
+        />
+        <!--Mobile-->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../src/img/img-about-me/img-man-mob@1x-min.png 1x,
+            ../src/img/img-about-me/img-man-mob@2x-min.png 2x
+          "
+        />
+        <img
+          class="img-about-me-man"
+          src="./src/img/img-about-me/img-man-mob@1x-min.png"
+          alt="Man with laptop"
+          width="320"
+          height="374"
+        />
+      </picture>
+    </div>
+
+    <div class="desk-right-title-text">
+      <h3 class="about-me-title-h3">bio</h3>
+      <ul class="about-me-bio-ul">
+        <li class="about-me-text-list-li list item marker">
+          <p class="about-me-text-p">
+            I'm Lloyd Jefferson, a talented programmer specializing in software
+            development. My expertise spans various programming languages and
+            technologies, and I am dedicated to continually enhancing my skills.
+            I thrive on seeking unconventional and creative solutions to
+            problems, leveraging a high level of analytical skills to
+            effectively tackle even the most challenging tasks.
+          </p>
+        </li>
+        <li class="about-me-text-list-li">
+          <p class="about-me-text-p">
+            Adaptable to both independent and team-oriented work, I collaborate
+            seamlessly with colleagues, exchanging ideas and finding optimal
+            solutions. My professional maturity enables me to navigate
+            challenges and stressful situations with a calm demeanor,
+            maintaining a consistently high quality of work. Committed to
+            self-improvement, I actively engage in studying new technologies and
+            practices to stay current with the latest innovations in the field.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="decor-bg-cont"></div>
+    <div class="education-container">
+      <h3 class="about-me-title-h3">education</h3>
+      <ul class="about-me-menu-ul">
+        <li class="about-me-text-list-li">
+          <p class="about-me-text-p text text_medium">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </p>
+        </li>
+        <li class="about-me-text-list-li">
+          <p class="about-me-text-p text text_medium">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </p>
+        </li>
+        <li class="about-me-text-list-li">
+          <p class="about-me-text-p text text_medium">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="role-container">
+      <h3 class="about-me-title-h3">role</h3>
+      <ul class="about-me-menu-ul">
+        <li class="about-me-text-list-li">
+          <p class="about-me-text-p text text_medium">Frontend development</p>
+        </li>
+        <li class="about-me-text-list-li">
+          <p class="about-me-text-p text text_medium">HeadlessCMS, Wordpress</p>
+        </li>
+        <li class="about-me-text-list-li">
+          <p class="about-me-text-p text text_medium">Blender (enjoy)</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>

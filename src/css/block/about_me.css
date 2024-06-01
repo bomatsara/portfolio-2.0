@@ -1,3 +1,33 @@
 .section.section-about_me {
+}
 
+.title-about-me-h2 {
+  letter-spacing: 0.03em;
+  text-align: right;
+  color: #292929;
+  gap: 40px;
+}
+
+.img-about-me-man {
+  border-radius: 16px;
+  gap: 40px;
+}
+
+.about-me-title-h3 {
+  font-weight: 500;
+  gap: 32px;
+}
+
+.about-me-text-list-li {
+  text-decoration: none;
+  gap: 32px;
+}
+
+.about-me-text-p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.decor-bg-cont {
+  background-color: ;
 }

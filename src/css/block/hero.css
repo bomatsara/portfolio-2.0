@@ -1,18 +1,8 @@
-html {
-    scroll-behavior: smooth;
-    /* Плавный скроллинг для всей страницы  
-    удалить если будет в главних настройках*/
-}
-
 .section.section-hero {
-    /*npm img*/
     padding-top: 96px;
 
-    ground-image: linear-gradient(rgba(228, 241, 238, 0.7),
-            rgba(222, 250, 237, 0.7)),
-        url(./imghero/decorbg1.svg);
-    width: 100%;
-
+    background-image:
+        url(../../imghero/decorbg1.svg);
 
     /*
     flex-shrink: 0;
@@ -164,6 +154,13 @@ html {
         display: flex;
     }
 
+    h1 .img-inline {
+        display: inline-block;
+        width: 108px;
+        height: 108px;
+        border-radius: 16px;
+        background-image: url('../../imghero/developer.jpg');
+    }
 
     .hero-image {
         width: 592px;

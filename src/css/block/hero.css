@@ -1,17 +1,14 @@
 .section.section-hero {
     padding-top: 96px;
-
     background-image:
         url(../../img/hero/decorbg1.svg);
-
-
     flex-shrink: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
-}
 
+}
 
 .hero-image {
     display: none;
@@ -21,8 +18,6 @@
     background-color: transparent;
     padding: 0;
     margin-bottom: 40px;
-
-
     position: relative;
 
     &:hover {
@@ -32,9 +27,9 @@
 }
 
 .hero-btn:hover .hero-Rectangle {
-    width: 320px;
+    width: 250px;
     height: 96px;
-    margin-left: -10%;
+    margin-left: 1%;
     animation: pulse 1s infinite;
     /* Анимация пульсации */
     transition: all 1s ease-in-out;
@@ -85,7 +80,7 @@
 .hero-Rectangle:hover {
     animation: pulse 0.5s infinite;
     margin: 0;
-    width: 320px;
+    width: 200px;
 }
 
 .hero-text {
@@ -108,7 +103,23 @@
     gap: 24px;
 }
 
-@media (min-width: 320px) {}
+@media (min-width: 320px) {
+    .hero-header {
+        margin-bottom: 50px;
+    }
+
+    .h-btn-desk {
+        margin-bottom: 40px;
+    }
+
+    .hero-Rectangle {
+        margin-left: 69%;
+        left: 0px;
+        right: 0px;
+        width: 149px;
+    }
+
+}
 
 @media (min-width: 768px) {
     .section.section-hero {
@@ -154,13 +165,13 @@
         display: flex;
     }
 
-    h1 .img-inline {
+    /* h1 .img-inline {
         display: inline-block;
         width: 108px;
         height: 108px;
         border-radius: 16px;
         background-image: url('../../img/hero/developer.jpg');
-    }
+    } */
 
     .hero-image {
         width: 592px;

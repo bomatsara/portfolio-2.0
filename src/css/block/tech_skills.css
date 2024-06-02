@@ -1,3 +1,76 @@
 .section.section-tech_skills {
+    text-align: center;
+}
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee-content {
+    background: #bcdfd1;
+    display: inline-flex;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+    align-items: center;
+}
+
+.title-tech-skills {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 16px;
+}
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+    .title-tech-skills {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .title-tech-skills {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1280px) {
+    .title-tech-skills {
+        font-size: 2.5em;
+    }
 }

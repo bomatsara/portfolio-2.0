@@ -1,19 +1,7 @@
 .section.section-hero {
     padding-top: 96px;
-    background-image:
-        /* linear-gradient(rgba(220, 245, 226, 0.3),
-            rgba(176, 228, 183, 0.3)), */
-        url(../../img/hero/decorbg1.svg);
     background-repeat: no-repeat;
-    flex-shrink: 0;
-    background-size: cover;
-    background-position: center;
-
-    top: 100px;
-    left: 100px;
-
     margin: 0 auto;
-
 }
 
 
@@ -77,6 +65,7 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: var(--color-light-accent);
     transition: all 1s ease-in-out;
+    opacity: 0.6;
 
 }
 
@@ -128,6 +117,15 @@
 /* mobile phone */
 @media (min-width: 320px) and (max-width: 767px) {
 
+    /* .section.section-hero {
+        background-size: 308px 705px;
+        background-position: 26px -5px;
+    } */
+    .section.section-hero {
+        background-image:
+            url(../../img/hero/decorMob.svg);
+    }
+
     .accent-space {
         letter-spacing: 4px;
     }
@@ -165,6 +163,14 @@
 /*Tablet*/
 @media (min-width: 768px) {
     .section.section-hero {}
+
+    .section.section-hero {
+        background-image:
+            url(../../img/hero/decorTablet.svg);
+        background-position: -151px 19px;
+        background-size: 1018px 831px;
+
+    }
 
     h1 {
         margin-bottom: 60px;
@@ -204,6 +210,15 @@
 
 @media (min-width: 1280px) {
 
+    .section.section-hero {
+        background-image:
+            url(../../img/hero/decorDesk.svg);
+        background-position: 21px 51px;
+        background-size: 1233px 908px;
+
+    }
+
+
     .div-comp {
         width: 50%;
     }
@@ -211,13 +226,7 @@
     .hero-header {
         align-items: center;
         display: flex;
-
-
-
     }
-
-
-
 
     .img-developer {
         background-image: url(../../img/hero/developer.jpg);

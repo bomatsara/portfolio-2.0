@@ -11,24 +11,43 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-}
-
-.marquee {
+  }
+  
+  .marquee {
     overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-}
-
-.marquee-content {
+  }
+  
+  .marquee__inner {
+    display: flex;
     background: #bcdfd1;
+  }
+  
+  .marquee__inner.green {
+    transform: rotate(2deg);
+    background: #e4e5e6;
+  
+  }
+  
+  .marquee__line {
     display: inline-flex;
-    padding-left: 100%;
-    animation: marquee 10s linear infinite;
-    align-items: center;
-}
-
-.title-tech-skills {
-    display: inline-flex;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 10px;
+    min-width: 100%;
+    white-space:  wrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    margin-bottom: 14px;
+  }
+  
+  .marquee__line.green {
+    
+    
+  }
+  
+  .title-tech-skills {
     align-items: center;
     font-family: "Poppins";
     font-weight: 500;
@@ -37,40 +56,43 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #292929;
-}
-
-.icon {
+  }
+  
+  .title-tech-skills.green {
+    color: #00b068;
+  }
+  
+  .icon {
     width: 24px;
     height: 24px;
     margin: 0 16px;
-}
-
-
-
-@keyframes marquee {
-    0% {
-        transform: translate(0, 0);
+  }
+  
+  
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(0);
     }
-
-    100% {
-        transform: translate(-100%, 0);
+  
+    to {
+      transform: translateX(-100%);
     }
-}
-
-@media (min-width: 320px) and (max-width: 360px) {
+  }
+  
+  @media (min-width: 320px) and (max-width: 360px) {
     .title-tech-skills {
-        font-size: 1.2em;
+      font-size: 1.2em;
     }
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
     .title-tech-skills {
-        font-size: 2em;
+      font-size: 2em;
     }
-}
-
-@media (min-width: 1280px) {
+  }
+  
+  @media (min-width: 1280px) {
     .title-tech-skills {
-        font-size: 2.5em;
+      font-size: 2.5em;
     }
-}
+  }

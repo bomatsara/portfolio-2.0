@@ -2,6 +2,30 @@
   padding-top: 40px;
 }
 
+.picture-bio-div {
+  display: block;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+  .picture-bio-div {
+    max-width: 704px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    background-image: url(/img/img-about-me/decor-bg-2-@1x-min.png);
+    background-repeat: no-repeat;
+    background-size: 336px;
+    background-position: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .picture-bio-div {
+    max-width: 1440px;
+  }
+}
+
 .title-about-me-h2 {
   letter-spacing: 0.03em;
   text-align: left;
@@ -11,16 +35,34 @@
 
 .img-about-me-man {
   display: block;
-  width: 100%;
+  max-width: 320px;
   border-radius: 16px;
   margin-bottom: 40px;
 }
 
+@media only screen and (min-width: 768px) {
+  .img-about-me-man {
+    display: block;
+    max-width: 336px;
+    max-height: 392px;
+    margin-top: 300px; /*????*/
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .img-about-me-man {
+    display: block;
+    max-width: 384px;
+    max-height: 448px;
+    margin-top: 300px;
+  }
+}
 .about-me-title-h3 {
   font-weight: 500;
   margin-top: 16px;
   margin-bottom: 32px;
 }
+
 .about-me-text-p {
   list-style: none;
   font-weight: 300;
@@ -57,9 +99,6 @@
   border-radius: 50%;
 }
 
-.decor-bg-cont {
+.decor-bg-phon-png {
   display: none;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }

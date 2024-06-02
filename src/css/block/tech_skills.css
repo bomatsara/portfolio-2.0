@@ -86,13 +86,21 @@
   }
   
   @media (min-width: 768px) {
+    .marquee__inner {
+      padding: 40px 0px;
+      width: 1517px;
+      height: 128px;
+    }
+  
     .title-tech-skills {
-      font-size: 2em;
+      font-size: 36px;
+      line-height: 1.33333;
+      letter-spacing: 0.01em;
     }
   }
   
   @media (min-width: 1280px) {
     .title-tech-skills {
-      font-size: 2.5em;
+     
     }
   }

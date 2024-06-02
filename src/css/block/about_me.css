@@ -18,19 +18,20 @@
 
 .about-me-title-h3 {
   font-weight: 500;
+  margin-top: 16px;
   margin-bottom: 32px;
 }
 .about-me-text-p {
   list-style: none;
   font-weight: 300;
   font-size: 16px;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 }
 
 .about-me-text-p-mark {
   font-weight: 300;
   font-size: 16px;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 }
 
 .about-me-menu-ul {
@@ -61,7 +62,4 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-}
-
-.education-container {
 }

@@ -16,8 +16,21 @@
 
 }
 
+
+.accent-space {
+    letter-spacing: 7px;
+}
+
 .hero-image {
     display: none;
+}
+
+
+.hero-btn-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0, 05px;
 }
 
 .hero-btn {
@@ -55,11 +68,12 @@
 
 .hero-Rectangle {
     border-radius: 16px;
-    width: 165px;
-    height: 92px;
+    width: 261px;
+    height: 96px;
     display: flex;
-    margin-left: 69%;
+    margin-left: 155px;
     position: absolute;
+    left: 0;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: var(--color-light-accent);
     transition: all 1s ease-in-out;
@@ -110,25 +124,45 @@
 }
 
 
+
 /* mobile phone */
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .accent-space {
+        letter-spacing: 4px;
+    }
+
     .hero-header {
         margin-bottom: 50px;
+    }
+
+    .hero-Rectangle {
+        width: 165px;
+        height: 92px;
     }
 
     .h-btn-desk {
         margin-bottom: 40px;
     }
 
+    .hero-btn-text {
+
+        font-size: 18px;
+        line-height: 28px;
+
+    }
+
+    /* 
     .hero-Rectangle {
         margin-left: 69%;
         left: 0px;
         right: 0px;
         width: 149px;
-    }
+    } */
 
 }
 
+/*Tablet*/
 @media (min-width: 768px) {
     .section.section-hero {}
 
@@ -137,6 +171,7 @@
         margin-top: 72px;
     }
 
+
     .hero-btn-text {
         font-weight: 400;
         font-size: 20px;
@@ -144,14 +179,14 @@
         letter-spacing: 0, 05px;
     }
 
-    .hero-Rectangle {
+    /* .hero-Rectangle {
         width: 261px;
         margin-left: 62%;
-    }
+    } */
 
     .hero-text {
         margin-bottom: 64px;
-
+        margin-top: 40px;
     }
 
     .list-hero {
@@ -169,22 +204,28 @@
 
 @media (min-width: 1280px) {
 
+    .div-comp {
+        width: 50%;
+    }
+
     .hero-header {
         align-items: center;
         display: flex;
+
+
+
     }
 
-    /* h1 .img-inline {
-        display: inline-block;
-        width: 108px;
-        height: 108px;
-        border-radius: 16px;
-        background-image: url('../../img/hero/developer.jpg');
-    } */
+
 
 
     .img-developer {
-        object-fit: cover;
+        background-image: url(../../img/hero/developer.jpg);
+        width: 592px;
+        height: 444px;
+        border-radius: 32px;
+        background-position: 0 -44px;
+        background-size: 100%;
     }
 
     .hero-image {
@@ -210,10 +251,10 @@
         width: 48%;
     }
 
-    .hero-Rectangle {
+    /* .hero-Rectangle {
         margin-left: 63%;
         width: 254px;
-    }
+    } */
 
     .hero-text {
         display: flex;

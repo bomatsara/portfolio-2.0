@@ -10,6 +10,7 @@
 
     @media only screen and (min-width: 1280px) {
       flex-direction: row;
+      margin-bottom: 0;
     }
   }
 
@@ -59,6 +60,7 @@
   .social-item {
     margin-right: auto;
     justify-content: right;
+    margin-bottom: 0px;
   }
 }
 
@@ -73,6 +75,7 @@
   .footer__copyright {
     max-width: 100%;
     text-align: right;
+    align-items: center;
   }
 }
 

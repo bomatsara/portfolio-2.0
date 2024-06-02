@@ -1,0 +1,21 @@
+.decor_bg {
+
+}
+
+.decor_bg-2 {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 336px;
+    height: 252px;
+    background-image: url("../../img/decor_bg/decor_bg_2.png");
+    background-size: contain;
+  }
+
+  @media (min-width: 1280px) {
+    width: 384px;
+    height: 288px;
+  }
+
+}

@@ -1,5 +1,66 @@
 .section.section-about_me {
   padding-top: 40px;
+
+  .section__title {
+    margin-bottom: 40px;
+  }
+
+  .about-me {
+    @media (min-width: 1280px) {
+      padding-left: 208px;
+    }
+  }
+
+  .about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 32px;
+    }
+
+    @media (min-width: 1280px) {
+      grid-gap: 136px;
+    }
+
+    &.about-me-grid-first {
+      margin-bottom: 40px;
+      align-items: flex-end;
+
+      @media (min-width: 768px) {
+        margin-bottom: 60px;
+      }
+
+      @media (min-width: 1280px) {
+        margin-bottom: 80px;
+      }
+    }
+
+    .about-me-grid-first-column-text {
+      p {
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .decor_bg {
+        @media (min-width: 768px) {
+          margin-top: 12px;
+          margin-bottom: -184px;
+          margin-left: auto;
+        }
+
+        @media (min-width: 1280px) {
+          margin-top: 40px;
+          margin-bottom: -96px;
+        }
+      }
+    }
+  }
 }
 
 .picture-bio-div {
@@ -26,18 +87,10 @@
   }
 }
 
-.title-about-me-h2 {
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: #292929;
-  margin-bottom: 40px;
-}
-
 .img-about-me-man {
   display: block;
   max-width: 320px;
   border-radius: 16px;
-  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -58,16 +111,7 @@
   }
 }
 .about-me-title-h3 {
-  font-weight: 500;
-  margin-top: 16px;
   margin-bottom: 32px;
-}
-
-.about-me-text-p {
-  list-style: none;
-  font-weight: 300;
-  font-size: 16px;
-  padding-bottom: 24px;
 }
 
 .about-me-text-p-mark {
@@ -80,23 +124,33 @@
   list-style: none;
   padding: 0;
   margin: 0;
-}
 
-.about-me-text-list-li {
-  position: relative;
-  padding-left: 20px;
-}
+  .about-me-text-list-li {
+    position: relative;
+    padding-left: 32px;
+    font-weight: 300;
+    margin-bottom: 12px;
 
-.about-me-text-list-li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 17%;
-  transform: translateY(-50%);
-  width: 6px;
-  height: 6px;
-  background-color: #00b068;
-  border-radius: 50%;
+    @media (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 4px;
+      margin: 10px;
+      background-color: var(--color-accent-green);
+      border-radius: 1px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .decor-bg-phon-png {

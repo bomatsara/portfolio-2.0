@@ -4,7 +4,6 @@
     margin: 0 auto;
 }
 
-
 .accent-space {
     letter-spacing: 7px;
 }
@@ -12,7 +11,6 @@
 .hero-image {
     display: none;
 }
-
 
 .hero-btn-text {
     font-weight: 400;
@@ -29,7 +27,6 @@
 
     &:hover {
         background-color: transparent;
-
     }
 }
 
@@ -40,7 +37,6 @@
     animation: pulse 1s infinite;
     /* Анимация пульсации */
     transition: all 1s ease-in-out;
-
 }
 
 .hero-el {
@@ -66,11 +62,9 @@
     background: var(--color-light-accent);
     transition: all 1s ease-in-out;
     opacity: 0.6;
-
 }
 
 /* Анімація пульсації */
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -112,15 +106,9 @@
     gap: 24px;
 }
 
-
-
 /* mobile phone */
 @media (min-width: 320px) and (max-width: 767px) {
 
-    /* .section.section-hero {
-        background-size: 308px 705px;
-        background-position: 26px -5px;
-    } */
     .section.section-hero {
         background-image:
             url(../../img/hero/decorMob.svg);
@@ -144,32 +132,20 @@
     }
 
     .hero-btn-text {
-
         font-size: 18px;
         line-height: 28px;
-
     }
-
-    /* 
-    .hero-Rectangle {
-        margin-left: 69%;
-        left: 0px;
-        right: 0px;
-        width: 149px;
-    } */
 
 }
 
 /*Tablet*/
 @media (min-width: 768px) {
-    .section.section-hero {}
 
     .section.section-hero {
         background-image:
             url(../../img/hero/decorTablet.svg);
         background-position: -151px 19px;
         background-size: 1018px 831px;
-
     }
 
     h1 {
@@ -177,18 +153,12 @@
         margin-top: 72px;
     }
 
-
     .hero-btn-text {
         font-weight: 400;
         font-size: 20px;
         line-height: 32px;
         letter-spacing: 0, 05px;
     }
-
-    /* .hero-Rectangle {
-        width: 261px;
-        margin-left: 62%;
-    } */
 
     .hero-text {
         margin-bottom: 64px;
@@ -215,9 +185,7 @@
             url(../../img/hero/decorDesk.svg);
         background-position: 21px 51px;
         background-size: 1233px 908px;
-
     }
-
 
     .div-comp {
         width: 50%;
@@ -259,11 +227,6 @@
     .h-btn-desk {
         width: 48%;
     }
-
-    /* .hero-Rectangle {
-        margin-left: 63%;
-        width: 254px;
-    } */
 
     .hero-text {
         display: flex;

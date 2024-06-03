@@ -9,7 +9,7 @@ export function lightboxInstance() {
     </div>
 `, {
     onShow: (instance) => {
-      instance.element().querySelector('.modal-close').onclick = instance.close
-    }
+      instance.element().querySelector('.modal-close').onclick = instance.close;
+    },
   });
 }

@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const mobMenuBtn = document.querySelector('.mob-menu-btn');
+  const htmlEl = document.querySelector('html');
   const mobCloseBtn = document.querySelector('.mob-close-btn');
   const mobileMenu = document.querySelector('.mobile-menu');
   const mobileLinks = document.querySelectorAll(
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function toggleMobileMenu() {
     mobileMenu.classList.toggle('open');
+    htmlEl.classList.toggle('menu-opened');
   }
 
   function handleLinkClick(event) {

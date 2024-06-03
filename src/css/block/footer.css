@@ -1,9 +1,9 @@
 .footer {
-  padding: 0;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-light-grey);
 
   .footer__top {
     display: flex;
-    align-items: left;
     justify-content: left;
     flex-direction: column;
     margin-bottom: 40px;

@@ -48,11 +48,13 @@
     }
 
     .about-me-grid-first-column-text {
-      p {
-        margin-bottom: 24px;
+      .about-me-text-wrap {
+        p {
+          margin-bottom: 24px;
 
-        &:last-child {
-          margin-bottom: 0;
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
 

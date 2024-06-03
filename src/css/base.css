@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   font-weight: 300;
   background-color: var(--color-white);
   color: var(--color-black);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .container {

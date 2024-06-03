@@ -37,7 +37,7 @@
     }
 
     .accordion {
-      border-top: 1px solid #ccc;
+      border-top: 1px solid var(--color-border);
       padding: 28px 24px;
       transition: all 0.3s ease 0s;
 
@@ -46,7 +46,7 @@
       }
 
       &:last-child {
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid var(--color-border);
       }
 
       .accordion__header {

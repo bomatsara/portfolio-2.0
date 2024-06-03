@@ -13,10 +13,10 @@
   align-items: center;
   justify-content: center;
   letter-spacing: 0.5px;
+  color: var(--color-black);
 
   &:hover {
     background-color: var(--color-dark-grey);
-    color: var(--color-white-default);
   }
 }
 
@@ -60,6 +60,7 @@
 
   &:hover {
     background-color: transparent;
+    color: var(--color-black);
 
     &:after {
       opacity: 0.6;

@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
-  background-color: var(--color-white);
+  background-color: var(--color-body);
   color: var(--color-black);
   overflow-x: hidden;
 }

@@ -29,12 +29,12 @@
         &::before {
           content: '';
           display: inline-block;
-          width: 4px;
-          height: 4px;
-          margin: 10px;
+          width: 8px;
+          height: 8px;
+          margin: 8px;
           margin-right: 26px;
           background-color: var(--color-accent-green);
-          border-radius: 1px;
+          border-radius: 2px;
         }
       }
 

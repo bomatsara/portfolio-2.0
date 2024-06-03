@@ -22,6 +22,11 @@
 
 .button-display {
   background-color: transparent;
+  padding: 32px 91px 32px 0;
+
+  @media (min-width: 768px) {
+    padding-right: 167px;
+  }
 
   &:before {
     content: '';
@@ -32,7 +37,34 @@
     margin-right: 12px;
   }
 
-  &:hover {}
+  &:after {
+    content: '';
+    width: 165px;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-accent-green);
+    opacity: 0.2;
+    border-radius: 16px;
+    transition: all 0.3s ease 0s;
+  }
+
+  @media (min-width: 768px) {
+    &:after {
+      width: 261px;
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+
+    &:after {
+      opacity: 0.6;
+    }
+  }
 }
 
 .button-accent {

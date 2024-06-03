@@ -11,4 +11,4 @@ import{a,i as c,S as u,N as d,b as m}from"./vendor-2e1e6a85.js";(function(){cons
         <div class="modal-text text">text</div>
     </div>
 `,{onShow:t=>{t.element().querySelector(".modal-close").onclick=t.close}})}document.addEventListener("DOMContentLoaded",()=>{const t=document.querySelector("#form-work-together");let s=null;t&&t.addEventListener("submit",async i=>{i.preventDefault();const{email:o,message:e}=i.target.elements;try{const r=await g({email:o.value,message:e.value});if(r.data){const{title:n,message:l}=r.data;s||(s=b()),s.element().querySelector(".modal-title").textContent=n,s.element().querySelector(".modal-text").textContent=l,s.show(),t.reset()}}catch(r){c.error({title:"Error",message:r.message})}})});
-//# sourceMappingURL=main-26b44052.js.map
+//# sourceMappingURL=main-61e40dd1.js.map

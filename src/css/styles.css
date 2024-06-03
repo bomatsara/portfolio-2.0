@@ -29,8 +29,6 @@
   Modules
 */
 @import url('./module/swiper.css');
-/*@import url('./module/modal.css');*/
-/*@import url('./module/swiper.css');*/
 @import url('./module/modal.css');
 @import url('./module/izitoast.css');
 
@@ -40,7 +38,7 @@
 /*@import url('./block/header.css');*/
 /*@import url('./block/hero.css');*/
 @import url('./block/about_me.css');
-/*@import url('./block/tech_skills.css');*/
+@import url('./block/tech_skills.css');
 @import url('./block/projects.css');
 @import url('./block/benefits.css');
 @import url('./block/faq.css');

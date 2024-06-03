@@ -1,3 +1,120 @@
 .section.section-about_me {
+  padding-top: 40px;
+
+  .section__title {
+    margin-bottom: 40px;
+  }
+
+  .about-me {
+    @media (min-width: 1280px) {
+      padding-left: 208px;
+    }
+  }
+
+  .about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 32px;
+    }
+
+    @media (min-width: 1280px) {
+      grid-gap: 136px;
+    }
+
+    &.about-me-grid-first {
+      margin-bottom: 40px;
+      align-items: flex-end;
+
+      @media (min-width: 768px) {
+        margin-bottom: 60px;
+      }
+
+      @media (min-width: 1280px) {
+        margin-bottom: 80px;
+      }
+    }
+
+    .img-about-me-man {
+      max-width: 320px;
+      height: auto;
+      border-radius: 16px;
+
+      @media (min-width: 768px) {
+        max-width: 336px;
+      }
+
+      @media (min-width: 1280px) {
+        max-width: 384px;
+      }
+    }
+
+    .about-me-grid-first-column-text {
+      p {
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .decor_bg {
+        @media (min-width: 768px) {
+          margin-top: 12px;
+          margin-bottom: -184px;
+          margin-left: auto;
+        }
+
+        @media (min-width: 1280px) {
+          margin-top: 40px;
+          margin-bottom: -96px;
+        }
+      }
+    }
+  }
+
+  .about-me-title-h3 {
+    margin-bottom: 32px;
+  }
+
+  .about-me-menu-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .about-me-text-list-li {
+      position: relative;
+      padding-left: 32px;
+      font-weight: 300;
+      margin-bottom: 12px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 16px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 4px;
+        margin: 10px;
+        background-color: var(--color-accent-green);
+        border-radius: 1px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .decor-bg-phon-png {
+    display: none;
+  }
 
 }

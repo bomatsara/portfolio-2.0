@@ -54,7 +54,7 @@ header.header {
 
 .mobile-menu {
   background: #f0f0f0;
-  background-image: url(../../img/header_svg/mob_menu_bg.png);
+  background-image: url(../../img/header_img/mob_menu_bg.png);
   background-position-y: 70px;
   position: fixed;
   top: 0;

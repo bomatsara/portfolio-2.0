@@ -39,13 +39,9 @@
     }
 
     .img-about-me-man {
-      max-width: 320px;
       height: auto;
+      width: 100%;
       border-radius: 16px;
-
-      @media (min-width: 768px) {
-        max-width: 336px;
-      }
 
       @media (min-width: 1280px) {
         max-width: 384px;

@@ -16,7 +16,7 @@ getReviews()
       title: 'Error',
       message: error.message,
     });
-    document.querySelector('#section-reviews .swiper').innerHTML = 'Not found'
+    document.querySelector('#section-reviews .swiper').innerHTML = 'Not found';
   });
 
 function renderReviews(data) {

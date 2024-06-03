@@ -17,5 +17,17 @@
     width: 384px;
     height: 288px;
   }
+}
 
+.decor_bg-4 {
+  display: none;
+
+  @media (min-width: 1280px) {
+    display: block;
+    width: 100%;
+    height: 408px;
+    background-image: url("../../img/decor_bg/decor_bg_4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

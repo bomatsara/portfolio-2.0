@@ -2,24 +2,26 @@
   @media (min-width: 768px) {
     padding-top: 104px;
     margin-top: -104px;
-    background-image: url(../../img/work_together/background.svg);
+    background-image: url(../../img/work_together/bg-md.png);
     background-repeat: no-repeat;
     background-size: 336px;
     background-position: calc(100% - 20px) 0;
   }
 
   @media (min-width: 1280px) {
+    background-image: url(../../img/work_together/bg-lg.png);
     padding-top: 144px;
     margin-top: -144px;
     background-size: 526px;
   }
 
   .section-work_together-title {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     @media (min-width: 1280px) {
       width: 100%;
       max-width: 510px;
+      margin-bottom: 80px;
     }
   }
 

@@ -12,6 +12,7 @@
   --color-dark-accent-green: #009156;
   /* It's used for marking errors on forms */
   --color-error: #E74A3B;
+  --color-white-default: #FFFFFF;
 
   --color-black-rgb: 41, 41, 41;
   --color-accent-green-rgb: 0, 176, 104;

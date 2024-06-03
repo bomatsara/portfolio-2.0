@@ -1,13 +1,12 @@
-document.querySelectorAll('.ac_trigger').forEach(el => {
-  el.addEventListener('click', element => {
-    const allAccordions = document.querySelectorAll('.ac');
+document.addEventListener('click', element => {
+  if (element.target.closest('.accordion')) {
+    const accordion = element.target.closest('.accordion');
 
-    allAccordions.forEach(acc => {
-      if (acc !== element.currentTarget.closest('.ac')) {
-        acc.classList.remove('ac-click');
-      }
+    const accordionList = accordion.closest('.accordion_list');
+    accordionList.querySelectorAll('.accordion').forEach(acc => {
+      acc.classList.remove('is-open');
     });
 
-    element.currentTarget.closest('.ac').classList.toggle('ac-click');
-  });
+    accordion.classList.add('is-open');
+  }
 });

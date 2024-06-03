@@ -8,6 +8,7 @@
 
   @media (min-width: 1280px) {
     background-image: url(../../img/hero/decordesk.png);
+    background-position: 240px 5px;
   }
 
   .hero-wrap {
@@ -15,6 +16,10 @@
 
     @media (min-width: 768px) {
       padding: 72px 0 104px;
+    }
+
+    @media (min-width: 1280px) {
+      padding: 88px 0 96px;
     }
   }
 

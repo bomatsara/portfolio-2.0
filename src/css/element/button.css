@@ -23,6 +23,10 @@
 .button-display {
   background-color: transparent;
   padding: 32px 91px 32px 0;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
 
   @media (min-width: 768px) {
     padding-right: 167px;
@@ -60,6 +64,7 @@
 
   &:hover {
     background-color: transparent;
+    color: initial;
 
     &:after {
       opacity: 0.6;

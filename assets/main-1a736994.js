@@ -1,8 +1,0 @@
-import{a,b as c,i as u}from"./vendor-715407fd.js";(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const i of t.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&n(i)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function n(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();async function d(r){const{name:o,email:s}=r;return await a.post("https://portfolio-js.b.goit.study/api/requests/",{name:o,email:s})}function m(){return c.create(`
-    <div class="modal">
-        <button class="modal-close icon icon-close"></button>
-        <div class="modal-title text_caption color-accent">test</div>
-        <div class="modal-text text">text</div>
-    </div>
-`,{onShow:r=>{r.element().querySelector(".modal-close").onclick=r.close}})}document.addEventListener("DOMContentLoaded",()=>{const r=document.querySelector("#form-work-together");let o=null;r&&r.addEventListener("submit",async s=>{s.preventDefault();const{email:n,message:e}=s.target.elements;try{const t=await d({email:n.value,message:e.value});if(t.data){const{title:i,message:l}=t.data;o||(o=m()),o.element().querySelector(".modal-title").textContent=i,o.element().querySelector(".modal-text").textContent=l,o.show(),r.reset()}}catch(t){u.error({title:"Error",message:t.message})}})});
-//# sourceMappingURL=main-1a736994.js.map

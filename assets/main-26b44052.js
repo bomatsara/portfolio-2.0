@@ -1,0 +1,14 @@
+import{a,i as c,S as u,N as d,b as m}from"./vendor-2e1e6a85.js";(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const r of e)if(r.type==="childList")for(const n of r.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function i(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?r.credentials="include":e.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function o(e){if(e.ep)return;e.ep=!0;const r=i(e);fetch(e.href,r)}})();const f={BASE_URL:"https://portfolio-js.b.goit.study/api",ENDPOINT_REVIEWS:"/reviews"},{BASE_URL:p,ENDPOINT_REVIEWS:v}=f;async function w(){return(await a(p+v)).data}async function g(t){const{name:s,email:i}=t;return await a.post("https://portfolio-js.b.goit.study/api/requests/",{name:s,email:i})}const y=document.querySelector(".reviews");w().then(t=>{h(t),E()}).catch(t=>{c.error({title:"Error",message:t.message}),document.querySelector("#section-reviews .swiper").innerHTML="Not found"});function h(t){const s=t.reduce((i,o)=>i+=`<li class="review swiper-slide">
+                    <div class="review__text">${o.review}</div>
+                    <div class="review__wrap">
+                        <img class="review__img" src="${o.avatar_url}" alt="${o.author}"/>
+                        <div class="review__author">${o.author}</div>
+                    </div>
+                </li>`,"");y.insertAdjacentHTML("afterbegin",s)}function E(){new u(".section-reviews .swiper",{slidesPerView:1,spaceBetween:32,modules:[d],navigation:{nextEl:".section-reviews .swiper-button-next",prevEl:".section-reviews .swiper-button-prev"},mousewheel:!0,breakpoints:{769:{slidesPerView:2}}})}function b(){return m.create(`
+    <div class="modal">
+        <button class="modal-close icon icon-close"></button>
+        <div class="modal-title text_caption color-accent">test</div>
+        <div class="modal-text text">text</div>
+    </div>
+`,{onShow:t=>{t.element().querySelector(".modal-close").onclick=t.close}})}document.addEventListener("DOMContentLoaded",()=>{const t=document.querySelector("#form-work-together");let s=null;t&&t.addEventListener("submit",async i=>{i.preventDefault();const{email:o,message:e}=i.target.elements;try{const r=await g({email:o.value,message:e.value});if(r.data){const{title:n,message:l}=r.data;s||(s=b()),s.element().querySelector(".modal-title").textContent=n,s.element().querySelector(".modal-text").textContent=l,s.show(),t.reset()}}catch(r){c.error({title:"Error",message:r.message})}})});
+//# sourceMappingURL=main-26b44052.js.map

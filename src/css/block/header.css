@@ -63,7 +63,7 @@ header.header {
   height: 100vh;
   padding: 20px;
   overflow: auto;
-  z-index: 1;
+  z-index: 100;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

@@ -1,3 +1,108 @@
-header.header {
+html.menu-opened {
+  overflow-y: hidden;
+}
 
+header.header {
+  padding: 20px 0;
+
+  .header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-logo {
+    padding-top: 8px;
+  }
+
+  .mob-menu-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mob-close-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-menu {
+    display: none;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .header-menu-link {
+    letter-spacing: 0.03em;
+  }
+
+  .header-menu-list {
+    list-style: none;
+  }
+
+  .mobile-menu {
+    background-color: #f0f0f0;
+    background-image: url(../../img/header_img/mob_menu_bg.png);
+    background-position-y: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    overflow: auto;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s, visibility 0.3s;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .mobile-menu.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobile-menu-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    flex-grow: 1;
+  }
+
+  @media (min-width: 768px) {
+    .mob-menu-btn {
+      display: none;
+    }
+
+    .header-logo {
+      font-size: 32px;
+      line-height: 1;
+      letter-spacing: 0.05em;
+    }
+
+    .header-menu {
+      display: flex;
+    }
+  }
 }

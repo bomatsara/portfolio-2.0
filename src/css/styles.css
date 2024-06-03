@@ -35,8 +35,8 @@
 /*
   Blocks
 */
-/*@import url('./block/header.css');*/
 @import url('./block/hero.css');
+@import url('./block/header.css');
 @import url('./block/about_me.css');
 @import url('./block/tech_skills.css');
 @import url('./block/projects.css');

@@ -9,7 +9,7 @@
   For tablet: @media (min-width: 768px) {}
   For desktop: @media (min-width: 1280px) {}
 */
-@import '../../node_modules/modern-normalize/modern-normalize.css';
+@import '../../node_modules/normalize.css/normalize.css';
 @import url('./fonts.css');
 @import url('./root.css');
 @import url('./base.css');
@@ -22,23 +22,30 @@
 @import url('./element/button.css');
 @import url('./element/icon.css');
 @import url('./element/input.css');
+@import url('./element/decor_bg.css');
+@import url('./element/logo.css');
 
 /*
   Modules
 */
-/*@import url('./module/swiper.css');*/
+@import url('./module/swiper.css');
 /*@import url('./module/modal.css');*/
+/*@import url('./module/swiper.css');*/
+@import url('./module/modal.css');
+@import url('./module/izitoast.css');
 
 /*
   Blocks
 */
 /*@import url('./block/header.css');*/
 /*@import url('./block/hero.css');*/
-/*@import url('./block/about_me.css');*/
+@import url('./block/about_me.css');
 /*@import url('./block/tech_skills.css');*/
 /*@import url('./block/projects.css');*/
 /*@import url('./block/benefits.css');*/
 /*@import url('./block/faq.css');*/
-/*@import url('./block/reviews.css');*/
+@import url('./block/reviews.css');
 /*@import url('./block/work_together.css');*/
-/*@import url('./block/footer.css');*/
+/*@import url('./block/reviews.css');*/
+@import url('./block/work_together.css');
+@import url('./block/footer.css');

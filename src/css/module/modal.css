@@ -1,0 +1,32 @@
+@import '../../../node_modules/basiclightbox/dist/basicLightbox.min.css';
+
+.basicLightbox {
+  padding: 0 20px;
+  background-color: rgba(41, 41, 41, 0.8);
+
+  .modal {
+    width: 100%;
+    max-width: 492px;
+    background-color: var(--color-white);
+    padding: 32px;
+    text-align: center;
+    border-radius: 16px;
+    position: relative;
+
+    @media (min-width: 768px) {
+      padding: 64px;
+    }
+
+    .modal-close {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      border: none;
+      padding: 0;
+    }
+
+    .modal-title {
+      margin-bottom: 16px;
+    }
+  }
+}

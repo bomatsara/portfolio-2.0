@@ -1,3 +1,11 @@
+h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+ul {
+  padding-left: 16px;
+}
+
 h1, h2, h3, .text_caption {
   text-transform: uppercase;
 }
@@ -31,6 +39,7 @@ h3 {
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.5px;
+  font-weight: 500;
 
   @media (min-width: 768px) {
     font-size: 36px;
@@ -81,4 +90,9 @@ a {
 .color-accent {
   color: var(--color-accent-green);
   font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }

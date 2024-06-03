@@ -1,11 +1,12 @@
 * {
   font-family: var(--font-poppins);
+  box-sizing: border-box;
 }
 
 body {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 300;
   background-color: var(--color-white);
   color: var(--color-black);
 }
@@ -18,11 +19,12 @@ body {
   margin-left: auto;
 
   @media (min-width: 360px) {
-    max-width: 320px;
+    max-width: 360px;
   }
 
   @media (min-width: 768px) {
     max-width: 704px;
+    padding: 0;
   }
 
   @media (min-width: 1280px) {

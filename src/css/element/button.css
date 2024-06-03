@@ -16,8 +16,8 @@
 
   &:hover {
     background-color: var(--color-dark-grey);
+    color: var(--color-black);
   }
-
 }
 
 .button-display {
@@ -78,4 +78,3 @@
     color: var(--color-accent-green);
   }
 }
-

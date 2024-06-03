@@ -1,3 +1,83 @@
 .section.section-benefits {
 
+  .section__wrapper {
+    @media (min-width: 1280px) {
+      padding-top: 148px;
+      margin-top: -148px;
+      background-image: url("../img/decor_bg/decor_bg_3.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+  }
+
+  .section__title {
+    margin-bottom: 40px;
+    width: 240px;
+
+    @media (min-width: 768px) {
+      width: 100%;
+      margin-bottom: -20px;
+    }
+
+    @media (min-width: 1280px) {
+      margin-bottom: -96px;
+      max-width: 700px;
+    }
+  }
+
+  .list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-gap: 32px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: ". item1" "item2 item3" "item4 .";
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: ". . item1" "item2 item3 item4";
+    }
+
+    .list-item {
+
+      .icon-benefits {
+        margin-bottom: 16px;
+      }
+
+      .benefits-title {
+        margin-top: 0;
+      }
+
+      .text_caption {
+        margin-bottom: 16px;
+      }
+
+      .benefits-text {
+
+      }
+
+      @media (min-width: 768px) {
+        &:nth-child(1) {
+          grid-area: item1;
+        }
+
+        &:nth-child(2) {
+          grid-area: item2;
+        }
+
+        &:nth-child(3) {
+          grid-area: item3;
+        }
+
+        &:nth-child(4) {
+          grid-area: item4;
+        }
+      }
+    }
+  }
+
 }

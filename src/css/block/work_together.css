@@ -1,18 +1,21 @@
 .section.section-work_together {
-  @media (min-width: 768px) {
-    padding-top: 104px;
-    margin-top: -104px;
-    background-image: url(../../img/work_together/bg-md.png);
-    background-repeat: no-repeat;
-    background-size: 336px;
-    background-position: calc(100% - 20px) 0;
-  }
 
-  @media (min-width: 1280px) {
-    background-image: url(../../img/work_together/bg-lg.png);
-    padding-top: 144px;
-    margin-top: -144px;
-    background-size: 526px;
+  .section__wrapper {
+    @media (min-width: 768px) {
+      padding-top: 104px;
+      margin-top: -104px;
+      background-image: url(../../img/work_together/bg-md.png);
+      background-repeat: no-repeat;
+      background-size: 336px;
+      background-position: calc(100% - 20px) 0;
+    }
+
+    @media (min-width: 1280px) {
+      background-image: url(../../img/work_together/bg-lg.png);
+      padding-top: 144px;
+      margin-top: -144px;
+      background-size: 526px;
+    }
   }
 
   .section-work_together-title {

@@ -1,25 +1,19 @@
 .section.section-hero {
-  background-repeat: no-repeat;
-  background-image: url(../../img/hero/decormob.png);
-
-  @media (min-width: 768px) {
-    background-image: url(../../img/hero/decortablet.png);
-  }
-
-  @media (min-width: 1280px) {
-    background-image: url(../../img/hero/decordesk.png);
-    background-position: 240px 5px;
-  }
 
   .hero-wrap {
     padding: 96px 0 72px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/hero/decormob.png);
 
     @media (min-width: 768px) {
       padding: 72px 0 104px;
+      background-image: url(../../img/hero/decortablet.png);
     }
 
     @media (min-width: 1280px) {
       padding: 88px 0 96px;
+      background-image: url(../../img/hero/decordesk.png);
+      background-position: -27px 5px;
     }
   }
 

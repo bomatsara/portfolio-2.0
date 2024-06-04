@@ -9,13 +9,19 @@ header.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    > .switcher.switcher__dark_mode {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+        margin-right: 40px;
+      }
+    }
   }
 
   .switcher.switcher__dark_mode {
     margin-left: auto;
-    @media (min-width: 1280px) {
-      margin-right: 40px;
-    }
   }
 
   .mob-menu-btn {

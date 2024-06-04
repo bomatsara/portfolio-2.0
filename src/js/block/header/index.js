@@ -42,11 +42,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Dark Mode
+const darkModeToggleEl = document.querySelectorAll('.darkModeToggle');
+
 function applyTheme(theme) {
   if (theme === 'dark') {
-    document.getElementById('darkModeToggle').checked = true;
+    darkModeToggleEl.forEach(element => {
+      element.checked = true;
+    });
   } else {
-    document.getElementById('darkModeToggle').checked = false;
+    darkModeToggleEl.forEach(element => {
+      element.checked = false;
+    });
   }
   localStorage.setItem('theme', theme);
   document.documentElement.setAttribute("data-color-scheme", theme);
@@ -66,6 +72,13 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
   if (!localStorage.getItem('theme')) {
     applyTheme(event.matches ? 'dark' : 'light');
   }
+});
+
+darkModeToggleEl.forEach(element => {
+  element.addEventListener('change', event => {
+    const newTheme = event.target.checked ? 'dark' : 'light';
+    applyTheme(newTheme);
+  })
 });
 
 document.getElementById('darkModeToggle').addEventListener('change', event => {

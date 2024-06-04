@@ -4,7 +4,7 @@
     @media (min-width: 1280px) {
       padding-top: 148px;
       margin-top: -148px;
-      background-image: url("../img/decor_bg/decor_bg_3.png");
+      background-image: url(../../img/decor_bg/decor_bg_3.png);
       background-repeat: no-repeat;
       background-position: right top;
     }

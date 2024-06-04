@@ -21,7 +21,7 @@ import{a as x,i as h,S as b,N as E,b as S}from"./vendor-2e1e6a85.js";(function()
           src="${i.image1x}"
           srcset="${i.image1x} 1x, ${i.image2x} 2x"
           alt="${i.alt}"
-          class="card-image"
+          class="card-image" loading="lazy"
         >
       </picture>
       <p class="text">${i.text}</p>
@@ -42,4 +42,4 @@ import{a as x,i as h,S as b,N as E,b as S}from"./vendor-2e1e6a85.js";(function()
         <div class="modal-text text">text</div>
     </div>
 `,{onShow:e=>{e.element().querySelector(".modal-close").onclick=e.close}})}document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#form-work-together");let t=null;e&&e.addEventListener("submit",async i=>{i.preventDefault();const{email:o,message:s}=i.target.elements;try{const r=await J({email:o.value,message:s.value});if(r.data){const{title:n,message:c}=r.data;t||(t=R()),t.element().querySelector(".modal-title").textContent=n,t.element().querySelector(".modal-text").textContent=c,t.show(),e.reset()}}catch(r){h.error({title:"Error",message:r.message})}})});
-//# sourceMappingURL=main-7bb04cb4.js.map
+//# sourceMappingURL=main-584a887b.js.map

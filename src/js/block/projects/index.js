@@ -41,7 +41,7 @@ function loadProjects() {
           src="${project.image1x}"
           srcset="${project.image1x} 1x, ${project.image2x} 2x"
           alt="${project.alt}"
-          class="card-image"
+          class="card-image" loading="lazy"
         >
       </picture>
       <p class="text">${project.text}</p>

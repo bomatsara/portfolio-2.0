@@ -10,6 +10,7 @@
   transition: all 0.3s ease;
   position: relative;
   font-weight: 300;
+  color: var(--color-black);
 
   &::placeholder {
     color: rgba(var(--color-black-rgb), .4);

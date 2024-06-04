@@ -11,6 +11,16 @@ header.header {
     align-items: center;
   }
 
+  .switcher.switcher__dark_mode {
+    margin-left: auto;
+    margin-right: 10px;
+
+
+    @media (min-width: 1280px) {
+      margin-right: 40px;
+    }
+  }
+
   .header-logo {
     padding-top: 8px;
   }
@@ -24,6 +34,11 @@ header.header {
     justify-content: center;
     align-items: center;
     padding: 0;
+
+    .icon {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .mob-close-btn {
@@ -35,6 +50,12 @@ header.header {
     justify-content: center;
     align-items: center;
     padding: 0;
+
+    .icon {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+    }
   }
 
   .header-menu {
@@ -52,7 +73,7 @@ header.header {
   }
 
   .mobile-menu {
-    background-color: #f0f0f0;
+    background-color: var(--color-white);
     background-image: url(../../img/header_img/mob_menu_bg.png);
     background-position-y: 70px;
     position: fixed;

@@ -38,3 +38,37 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+
+
+// Dark Mode
+function applyTheme(theme) {
+  if (theme === 'dark') {
+    document.getElementById('darkModeToggle').checked = true;
+  } else {
+    document.getElementById('darkModeToggle').checked = false;
+  }
+  localStorage.setItem('theme', theme);
+  document.documentElement.setAttribute("data-color-scheme", theme);
+}
+
+
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme) {
+  applyTheme(savedTheme);
+} else {
+  const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(userPrefersDark ? 'dark' : 'light');
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+  if (!localStorage.getItem('theme')) {
+    applyTheme(event.matches ? 'dark' : 'light');
+  }
+});
+
+document.getElementById('darkModeToggle').addEventListener('change', event => {
+  const newTheme = event.target.checked ? 'dark' : 'light';
+  applyTheme(newTheme);
+});

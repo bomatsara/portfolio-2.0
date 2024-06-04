@@ -42,4 +42,4 @@ import{a as x,i as f,S as y,N as E,b as S}from"./vendor-2e1e6a85.js";(function()
         <div class="modal-text text">text</div>
     </div>
 `,{onShow:e=>{e.element().querySelector(".modal-close").onclick=e.close}})}document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#form-work-together");let t=null;e&&e.addEventListener("submit",async o=>{o.preventDefault();const{email:s,message:i}=o.target.elements;try{const n=await K({email:s.value,message:i.value});if(n.data){const{title:r,message:c}=n.data;t||(t=Z()),t.element().querySelector(".modal-title").textContent=r,t.element().querySelector(".modal-text").textContent=c,t.show(),e.reset()}}catch(n){f.error({title:"Error",message:n.message})}})});
-//# sourceMappingURL=main-3f04c391.js.map
+//# sourceMappingURL=main-43fb7f71.js.map

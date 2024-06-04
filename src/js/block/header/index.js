@@ -81,7 +81,9 @@ darkModeToggleEl.forEach(element => {
   })
 });
 
-document.getElementById('darkModeToggle').addEventListener('change', event => {
-  const newTheme = event.target.checked ? 'dark' : 'light';
-  applyTheme(newTheme);
+darkModeToggleEl.forEach(element => {
+  element.addEventListener('change', event => {
+    const newTheme = event.target.checked ? 'dark' : 'light';
+    applyTheme(newTheme);
+  });
 });

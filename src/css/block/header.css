@@ -11,6 +11,16 @@ header.header {
     align-items: center;
   }
 
+  .switcher.switcher__dark_mode {
+    margin-left: auto;
+    margin-right: 10px;
+
+
+    @media (min-width: 1280px) {
+      margin-right: 40px;
+    }
+  }
+
   .header-logo {
     padding-top: 8px;
   }
@@ -24,6 +34,11 @@ header.header {
     justify-content: center;
     align-items: center;
     padding: 0;
+
+    .icon {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .mob-close-btn {
@@ -35,6 +50,12 @@ header.header {
     justify-content: center;
     align-items: center;
     padding: 0;
+
+    .icon {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+    }
   }
 
   .header-menu {
@@ -105,81 +126,6 @@ header.header {
 
     .header-menu {
       display: flex;
-    }
-  }
-}
-
-.dark_mode {
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 48px;
-    height: 24px;
-
-    input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: var(--color-light-grey);
-      transition: all .3s ease;
-      border-radius: 34px;
-      overflow: hidden;
-
-      &:before, &:after {
-        content: "";
-        position: absolute;
-        transition: all .3s ease;
-        border-radius: 50%;
-      }
-
-      &:before {
-        height: 20px;
-        width: 20px;
-        left: 2px;
-        bottom: 2px;
-        background-color: var(--color-accent-green);
-        border-radius: 50%;
-      }
-
-      &:after {
-        height: 18px;
-        width: 18px;
-        left: -100%;
-        bottom: 3px;
-        background-color: var(--color-light-grey);
-        transform: translateX(-50%) scaleX(1);
-      }
-    }
-  }
-
-  input:checked + .slider:before {
-    transform: translateX(24px);
-  }
-
-  input:checked + .slider:after {
-    left: 61%;
-  }
-}
-
-:root[data-color-scheme="dark"] {
-  .dark_mode {
-    .slider {
-      &:before {
-        transform: translateX(24px);
-      }
-
-      &:after {
-        left: 61%;
-      }
     }
   }
 }

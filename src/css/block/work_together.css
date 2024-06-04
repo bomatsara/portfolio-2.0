@@ -122,5 +122,13 @@
       resize: none;
       min-height: 128px;
     }
+
+    span.--error {
+      color: var(--color-error);
+      letter-spacing: 0.5px;
+      font-size: 12px;
+      display: block;
+      margin-top: 4px;
+    }
   }
 }

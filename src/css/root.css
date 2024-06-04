@@ -17,6 +17,7 @@
   /* It's used for marking errors on forms */
   --color-error: #E74A3B;
   --color-white-default: #FFFFFF;
+  --color-bg-modal: #F0F0F0;
 
   --color-black-rgb: 41, 41, 41;
   --color-accent-green-rgb: 0, 176, 104;
@@ -38,6 +39,7 @@
 
   --color-light-accent: #214136;
   --color-dark-grey: #3B3F45;
+  --color-bg-modal: #2A2D32;
 
   --color-black-rgb: 240, 240, 240;
   --color-accent-green-rgb: 0, 145, 86;

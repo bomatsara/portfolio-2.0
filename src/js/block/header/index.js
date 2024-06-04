@@ -39,8 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
-
 // Dark Mode
 const darkModeToggleEl = document.querySelectorAll('.darkModeToggle');
 
@@ -57,7 +55,6 @@ function applyTheme(theme) {
   localStorage.setItem('theme', theme);
   document.documentElement.setAttribute("data-color-scheme", theme);
 }
-
 
 const savedTheme = localStorage.getItem('theme');
 

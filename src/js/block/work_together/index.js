@@ -1,5 +1,6 @@
 import { request } from '../../utils/api.js';
 import { lightboxInstance } from '../../utils/basiclightbox.js';
+import { validateInput, validateStrategy } from './formUtils.js';
 import iziToast from 'izitoast';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,10 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!formEL) return;
 
+  const { email: emailEl, message: messageEl } = formEL.elements;
+
+  emailEl.addEventListener('blur', () => validateStrategy(emailEl));
+  messageEl.addEventListener('blur', () => validateStrategy(messageEl));
+
   formEL.addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    const { email: emailEl, message: messageEl } = event.target.elements;
+    const isEmailValid = validateInput(emailEl).validated;
+    const isMessageValid = validateInput(messageEl).validated;
+
+    if (!isEmailValid || !isMessageValid) {
+      return;
+    }
 
     try {
       const response = await request({
@@ -31,6 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         lightbox.show();
         formEL.reset();
+        emailEl.classList.remove('--success');
+        messageEl.classList.remove('--success');
       }
     } catch (error) {
       iziToast.error({

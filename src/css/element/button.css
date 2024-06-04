@@ -13,16 +13,21 @@
   align-items: center;
   justify-content: center;
   letter-spacing: 0.5px;
-  color: var(--color-black);
+  font-weight: 500;
 
   &:hover {
     background-color: var(--color-dark-grey);
+    color: var(--color-white-default);
   }
 }
 
 .button-display {
   background-color: transparent;
   padding: 32px 91px 32px 0;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
 
   @media (min-width: 768px) {
     padding-right: 167px;
@@ -60,7 +65,7 @@
 
   &:hover {
     background-color: transparent;
-    color: var(--color-black);
+    color: initial;
 
     &:after {
       opacity: 0.6;
@@ -95,6 +100,7 @@
 
 .button-outline {
   background-color: transparent;
+  font-weight: 400;
 
   &:after {
     content: '';

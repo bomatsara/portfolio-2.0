@@ -1,5 +1,15 @@
 .section.section-hero {
   background-repeat: no-repeat;
+  background-image: url(../../img/hero/decormob.png);
+
+  @media (min-width: 768px) {
+    background-image: url(../../img/hero/decortablet.png);
+  }
+
+  @media (min-width: 1280px) {
+    background-image: url(../../img/hero/decordesk.png);
+    background-position: 240px 5px;
+  }
 
   .hero-wrap {
     padding: 96px 0 72px;
@@ -7,13 +17,18 @@
     @media (min-width: 768px) {
       padding: 72px 0 104px;
     }
+
+    @media (min-width: 1280px) {
+      padding: 88px 0 96px;
+    }
   }
 
   .hero-grid {
     display: grid;
+    grid-gap: 40px;
 
     @media (min-width: 1280px) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 72px;
     }
 
@@ -22,7 +37,7 @@
     }
 
     &.hero-grid-bottom {
-      grid-gap: 40px;
+      /*grid-gap: 40px;*/
     }
   }
 
@@ -44,6 +59,7 @@
     border-radius: 32px;
     width: 100%;
     display: block;
+    object-fit: cover;
   }
 
   .list-hero {
@@ -61,20 +77,4 @@
       padding: 40px 0;
     }
   }
-
-  @media (max-width: 767px) {
-    background-image: url(../../img/hero/decormob.png);
-
-  }
-
-  @media (min-width: 768px) and (max-width: 1279px) {
-    background-image: url(../../img/hero/decortablet.png);
-  }
-
-
-  @media (min-width: 1280px) {
-    background-image: url(../../img/hero/decordesk.png);
-
-  }
-
 }

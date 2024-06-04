@@ -23,6 +23,7 @@ header.header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
 
   .mob-close-btn {
@@ -33,6 +34,7 @@ header.header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
 
   .header-menu {
